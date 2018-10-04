@@ -8,7 +8,7 @@ export const environment = {
 };
 
 export const weatherBit = {
-  apiKey: '[ADD YOUR API KEY HERE]',
+  apiKey: '2276444751ea4d5885a285fd4212a2c0',
   urlBase: 'https://api.weatherbit.io/v2.0/forecast/daily'
 };
 

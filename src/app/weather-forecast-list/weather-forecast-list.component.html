@@ -1,3 +1,12 @@
-<p>
-  weather-forecast-list works!
-</p>
+<h3>
+  <button (click)= "getWeather()" > CLICK to obtain weather </button>
+
+</h3>
+
+<h4 *ngIf="cityDetails">
+  City: {{cityDetails.cityName}}, State: {{cityDetails.state}}  |  TimeZome: {{cityDetails.timeZone}}
+</h4>
+
+<div *ngFor="let forecast of weatherForecasts">
+  <app-weather-forecast [weatherForecast] = "forecast"> </app-weather-forecast>
+</div>
